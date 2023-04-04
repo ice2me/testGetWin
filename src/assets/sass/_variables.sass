@@ -1,0 +1,59 @@
+// Variables
+$font-fontDefault-family: 'Poppins', sans-serif
+
+$enable-rfs: false
+$enable-negative-margins: true
+$enable-shadows: true
+
+$basic-color: rgba(20,121,255, 1)
+$basic-color-text: rgba(39,71,114, 1)
+$basic-color-opacity: rgba(39,71,114, 0.3)
+$basic-bg: rgba(247,250,255, 1)
+$basic-bg-opacity: rgba(247,250,255, 0.8)
+
+$gray-10: #f8fbff
+$gray-100: #ebf1fa
+$gray-200: #b6c3d3
+$gray-300: #bac8db
+$gray-400: #213a5c
+$gray-500: #93a6bf
+$gray-600: #e7edf5
+$gray-700: #565f6a
+$gray-800: #364a58
+$gray-50: #F2F7FC
+$blue: #1479ff
+$red: #ff4545
+$red-dark: #dc0000
+$green: #27ae60
+$orange: #f6ab60
+$white: #fff
+
+$primary: $blue
+$success: $green
+$warning: $orange
+$danger: $red
+$danger-dark: $red-dark
+$light: $gray-100
+$light-50: $gray-50
+$secondary: $gray-300
+
+$border-radius: 4px
+
+@mixin centering()
+  display: flex
+  align-items: center
+  justify-content: center
+@mixin starting()
+  display: flex
+  align-items: center
+  justify-content: flex-start
+
+@mixin calc($property,$maxSize,$minSize)
+  #{$property} : calc(#{$minSize+px} + (#{$maxSize} - #{$minSize}) * ((100vw - 320px) / (1440 - 320)))
+
+
+$box-shadow: 0 5px 1.875rem rgba(182, 195, 211, .6)
+$box-shadow-lg: 0 1.25rem 3.75rem rgba(182, 195, 211, .5)
+
+$border-radius-sm: .5rem
+$border-radius-lg: .75rem
